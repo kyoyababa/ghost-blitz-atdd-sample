@@ -43,7 +43,7 @@ describe('おばけキャッチ', () => {
         const uniqueItemColors = itemColors.filter((x, i, self) => self.indexOf(x) === i);
         expect(uniqueItemColors.length).toBe(2);
       });
-      Then('カードに記載されているアイテムが両方正解ではないこと', () => {
+      Then('カードに記載されているアイテムに正解が存在すること', () => {
         expect(ghostBlitz.getCorrectItem(ghostBlitz.currentCard)).toBeTruthy();
       });
     });
@@ -53,7 +53,7 @@ describe('おばけキャッチ', () => {
         const ghostBlitz = new GhostBlitz();
         ghostBlitz.generateNewCard();
 
-        Then(`${i}枚目のカードに記載されているアイテムが両方正解ではないこと`, () => {
+        Then(`${i}枚目のカードに記載されているアイテムに正解が存在すること`, () => {
           expect(ghostBlitz.getCorrectItem(ghostBlitz.currentCard)).toBeTruthy();
         });
       }
