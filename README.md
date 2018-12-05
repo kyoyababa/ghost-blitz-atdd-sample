@@ -2,6 +2,10 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.0.6.
 
+## ATDD Article (Japanese)
+
+https://qiita.com/kyoyababa/items/f270f97833a6dd9e15b3
+
 ## Features
 
 - おばけキャッチ

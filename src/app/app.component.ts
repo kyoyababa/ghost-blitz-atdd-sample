@@ -17,8 +17,7 @@ export class GhostBlitz {
 
     if (currentCard.some(card => card.name === '本')) {
       this.isCorrect = false;
-    }
-    else if (this.getCorrectItem(currentCard).name === itemName) {
+    } else if (this.getCorrectItem(currentCard).name === itemName) {
       this.isCorrect = true;
     }
   }
@@ -28,8 +27,7 @@ export class GhostBlitz {
 
     if (currentCard.every(card => card.name !== '本')) {
       this.isCorrect = false;
-    }
-    else if (this.getCorrectItem(currentCard).name === itemName) {
+    } else if (this.getCorrectItem(currentCard).name === itemName) {
       this.isCorrect = true;
     }
   }
@@ -86,8 +84,7 @@ export class GhostBlitz {
     const targets = this.items.filter(item => {
       if (isFirstItemPerfectlyMatched) {
         return item.name !== firstItem.name && item.name !== secondItemName;
-      }
-      else {
+      } else {
         return item.color !== firstItem.color && item.name !== firstItem.name;
       }
     });
